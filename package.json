@@ -1,0 +1,35 @@
+{
+  "name": "colorize-pinyin",
+  "version": "1.0.0",
+  "description": "colorizing Pinyin text with HTML markup",
+  "main": "index.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist",
+    "Readme.md"
+  ],
+  "scripts": {
+    "build": "gulp bundleJs",
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krmanik/colorize-pinyin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krmanik/colorize-pinyin/issues"
+  },
+  "homepage": "https://github.com/krmanik/colorize-pinyin#readme",
+  "keywords": [],
+  "author": "krmanik",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-replace": "^1.1.4"
+  }
+}
