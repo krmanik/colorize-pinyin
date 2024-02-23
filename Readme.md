@@ -15,10 +15,19 @@ npm install colorize-pinyin
 
 ### In Browser
 
-Include the library in your HTML file:
+Include the library in your HTML file, either from cdn or node_modules.
 
+1. From cdn
+    ```html
+    <script src="https://cdn.jsdelivr.net/npm/colorize-pinyin@latest/dist/colorize-pinyin.min.js"></script>
+    ```
+2. From node_modules
+    ```html
+    <script src="node_modules/colorize-pinyin/dist/colorize-pinyin.min.js"></script>
+    ```
+Then use it in browser.
 ```html
-<script src="node_modules/colorize-pinyin/dist/colorize-pinyin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/colorize-pinyin@latest/dist/colorize-pinyin.min.js"></script>
 
 <div id="pinyinText">
     bié de
@@ -35,7 +44,7 @@ Include the library in your HTML file:
 ### In Node.js
 
 ```javascript
-const colorizePinyin = require("colorize-pinyin");
+const { colorizePinyin } = require("colorize-pinyin");
 
 const pinyinText = "bié de";
 const colorizedHTML = colorizePinyin().colorized_HTML_string_from_string(pinyinText);
@@ -45,15 +54,15 @@ console.log(colorizedHTML);
 
 ## API
 
-### `colorized_HTML_string_from_string(text, pinyin_wrapper_class, tones_classes)`
+#### `colorized_HTML_string_from_string(text, pinyin_wrapper_class, tones_classes)`
 
 - `text` (string): The input text containing Pinyin.
-- `pinyin_wrapper_class` (string, optional): CSS class for the wrapper element (default: 'pinYinWrapper').
-- `tones_classes` (array of strings, optional): CSS classes for different Pinyin tones (default: ["t0", "t1", "t2", "t3", "t4"]).
+- `pinyin_wrapper_class` (string, optional): CSS class for the wrapper element (default: `pinYinWrapper`).
+- `tones_classes` (array of strings, optional): CSS classes for different Pinyin tones (default: `["t0", "t1", "t2", "t3", "t4"]`).
 
 Returns a colorized HTML string with Pinyin.
 
-### `lowercase_string_by_removing_pinyin_tones(s)`
+#### `lowercase_string_by_removing_pinyin_tones(s)`
 
 - `s` (string): The input string with Pinyin tones.
 

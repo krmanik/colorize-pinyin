@@ -1,8 +1,8 @@
 {
   "name": "colorize-pinyin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "colorizing Pinyin text with HTML markup",
-  "main": "index.js",
+  "main": "dist/colorize-pinyin.min.js",
   "directories": {
     "dist": "dist"
   },
